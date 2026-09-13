@@ -1,0 +1,17 @@
+name: demo-project
+language: javascript
+agent: generic
+
+gates:
+  - name: file.exists
+    enabled: true
+    files:
+      - README.md
+      - package.json
+      - src/index.js
+  - name: test.passes
+    enabled: true
+    command: "node --version"
+  - name: lint.clean
+    enabled: false
+    command: "node --version"

@@ -1,0 +1,12 @@
+project: demo
+language: typescript
+agent: generic
+gates:
+  - name: file.exists
+    enabled: true
+    files:
+      - SKILL.md
+      - README.md
+  - name: test.passes
+    enabled: true
+    command: "node -e \"console.log('ok')\""

@@ -1,0 +1,12 @@
+{
+  "name": "projectguard",
+  "version": "0.1.0",
+  "description": "Verification layer for AI agent task completion",
+  "main": "src/cli/pg-verify.js",
+  "license": "MIT",
+  "keywords": ["ai", "agent", "verification", "gates", "done-check", "project-health"],
+  "scripts": {
+    "test": "node tests/run.js",
+    "verify": "node src/cli/pg-verify.js"
+  }
+}
